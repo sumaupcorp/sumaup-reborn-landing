@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 
-const BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8080";
+// URL del backend de produccion (VPS). Se puede sobreescribir con la variable
+// de entorno NEXT_PUBLIC_API_BASE_URL en Vercel si algun dia se necesita.
+const BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://api.sumaup360.com";
 
 type Tipo = "BOLETA" | "FACTURA";
 
