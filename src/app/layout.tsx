@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     template: "%s · SUMAUP360",
   },
   description: siteConfig.description,
-  icons: { icon: "/icons/sumaup_logo.png" },
+  // El favicon usa la convencion de archivos de Next: app/icon.png, app/favicon.ico,
+  // app/apple-icon.png (el isotipo circular de la app Suma).
 };
 
 export default function RootLayout({
